@@ -1,0 +1,564 @@
+html{
+    font-family: "Roboto";
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #212121;
+}
+
+header {
+    font-family: Boldonse;
+    background-color: #192135;
+    color: white;
+    padding: 0.5rem 2rem;
+    /* background: #192135 url('img/bnr_ALFA.png') no-repeat center / 100% 100%; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.contenedor_derecha{
+    position: absolute;
+    right: 2rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.contenedor_izquierda {
+    position: absolute;
+    left: 2rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.youtube-icon {
+    color: #FF0000; /* Rojo de YouTube */
+    font-size: 50px; /* Tamaño del ícono */
+    margin-right: 15px; /* Espacio entre el botón y el ícono */
+    text-decoration: none;
+
+    display: inline-flex;
+}
+.youtube-icon:hover {
+    color: #CC0000; /* Rojo más oscuro al pasar el mouse */
+}
+
+#btn_unete{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0070C0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#btn_unete:hover{
+    background-color: #0056b3;
+
+    box-shadow: 0 0.1rem 0.4rem rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+
+.logo {
+    width: 100px;
+}
+
+#header_logo_alfa{
+    border-radius: 100000000000rem;
+}
+
+#header_logo_alfa:hover{
+    box-shadow: 0 0.0rem 1.6rem rgba(255, 255, 255, 0.5);
+    transition: box-shadow 1.3s ease;
+}
+
+#header_logo_beta{
+    border-radius: 100000000000rem;
+}
+
+#header_logo_beta:hover{
+    box-shadow: 0 0.0rem 0.8rem rgba(223, 155, 8, 0.5);
+    transition: box-shadow 0.3s ease;
+    
+    content: url("img/PATUAL.png");
+    /* transition: content 3s ease; */
+}
+
+header h1{
+    text-align: center;
+    flex: 1;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #233157;
+    margin: 1rem, 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    color:white;
+
+
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.bnr_guia{
+    display: block;
+    height: 250px;
+    width: 1200px;
+    border-radius: 2rem;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.bnr_guia:hover{
+    box-shadow: 0 0.2rem 0.8rem rgba(200, 200, 200, 0.5);
+    /* transition: box-shadow 0.3s ease; */
+}
+
+#bnr_pvp{
+    background: grey url('img/contenido_pvp.png') no-repeat center / 1200px 250px;
+}
+
+#bnr_industrial{
+    background: grey url('img/contenido_industrial.png') no-repeat center / 1200px 250px;
+}
+
+#bnr_kits{
+    background: grey url('img/kits_naves.png') no-repeat center / 1200px 250px;
+    font-family: Boldonse;
+    color: white;
+    padding: 0.5rem 2rem;
+}
+
+.articulo{
+    background-color: #192135;
+    padding: 0.25rem 1rem;
+    color: white;
+    border-radius: 2rem;
+    border: 1px solid #444444;
+    margin: 0.5rem 0;
+}
+
+.intro_articulo{
+    font-size: 25px;
+    padding-inline: 1rem;
+}
+
+.titulo_articulo, .subtitulo_articulo{
+    text-align: center;
+}
+
+.pie_nota{
+    font-size: 15px;
+    font-family:"Inconsolata" ;
+    text-align: center;
+}
+
+.contenedor_elementos{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.kit_img{
+    width: 77%;
+    margin: 0px 10px;
+    margin-right: 20px;
+    border: #444444 solid 1px;
+
+    align-self: center;
+}
+
+.kit_modulos{
+    color:white 
+}
+
+.kit_descripcion{
+    width: 74%;
+    margin: 0px 10px;
+    margin-right: 20px;
+
+    align-self: center;
+}
+
+.contenedor_btn_vertical{
+    /* margin: 0.5rem 0;
+    padding: 0.25rem 1rem; */
+    width: 20%;
+    height:50px;
+    /* border: red solid; */
+}
+
+.btn_funcion_kit{
+    cursor: pointer;
+    width: 49%;
+    height:50px;
+    border-radius: 2rem;
+    background-color: #444444;
+    color: white;
+}
+
+.btn_funcion_kit:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+
+
+.contenido{
+    width: 1000px;
+    margin: 0 auto;
+    transition: box-shadow 0.3s ease;
+    background-color: #161e31;
+    margin: 1rem, 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 1rem;
+    color:white;
+    /* padding-right: 40px; */
+
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+/* CONFIGURACIÓN DEL MODAL */
+.contenido_modal {
+    color:white;
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #161e31;
+    border: 1px solid #444444;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.fondo_modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.btn_cerrar {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+    padding: 0px 7px;
+    border-radius: 100%;
+    background-color: #444444;
+}
+
+.btn_cerrar:hover {
+    box-shadow: 0 0.05rem 0.2rem rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.1s ease;
+}
+
+.kit{
+    width: 95%;
+    margin: 0 auto;
+    transition: box-shadow 0.3s ease;
+
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+/* #guia_pvp{
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+} */
+
+
+/* BOTONES CONTENIDO */
+.btn_contenido{
+    cursor: pointer;
+    margin: 2px;
+    padding: 15px 0px;
+    width: 24.4%;
+    border-radius: 2rem;
+    /* font-family: Roboto; */
+}
+
+.btn_contenido:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+/* BOTONES KITS */
+.btn_kit{
+    cursor: pointer;
+    margin: 2px;
+    padding: 15px 0px;
+    width: 315px;
+    height: 270px;
+    border-radius: 2rem;
+    background-color: #2D2D2D;
+    color: white;
+}
+
+.btn_kit:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+.btn_kit img{
+    width: 90%;
+    margin: 0px 10px;
+    border: #000000 solid 1px;
+
+    align-self: center;
+}
+
+
+.referencia{
+    cursor: pointer;
+    color:white;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.referencia:hover{
+    /* transition: color 0.3s ease; */
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+/* BOTONES GUIA PVP */
+#btn_faction-warfare{
+    background-color: #FFBD5D;
+}
+
+#btn_fleet-war{
+    background-color: #004BAF;
+    color:white;
+}
+
+#btn_pirateo-gank{
+    background-color: #AB22CD;
+    color:white;
+}
+
+#btn_pvp-basico{
+    background-color: #FF3233;
+}
+
+/* BOTONES GUIA INDUSTRIAL */
+
+#btn_anomalias-mineras{
+    background-color: #AE171A;
+    color:white;
+}
+
+#btn_depositos-estadisticas{
+    background-color: #C89546;
+}
+
+#btn_farmeo-gran-escala{
+    background-color: #F4E262;
+}
+
+#btn_mineria-wilds{
+    background-color: #AB22CD;
+    color:white;
+}
+
+/* BOTONES GUIA KITS */
+
+#btn_kits-industria{
+    background-color: #F4E262;
+}
+
+#btn_kits-pve{
+    background-color: #03BF62;
+}
+
+#btn_kits-pvp{
+    background-color: #FF3233;
+    color:white;
+}
+
+#btn_kits-pirateria{
+    background-color: #AB22CD;
+    color:white;
+}
+
+
+#contenido_pvp_faction-warfare{
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    /* display: none; */
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+.lista_corta{
+    list-style: circle;
+}
+
+.titulo_lista{
+    font-weight: bold;
+}
+
+.inicio_lista{
+    font-weight: bold;
+}
+
+.texto{
+    padding-left: 40px;
+}
+
+section article:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(20, 4, 235, 0.3);
+}
+
+.vineta_personalizada{
+    list-style: none;
+    padding-left: 0;
+}
+
+.vineta_personalizada .li_anomalia{
+    padding-left: 25px;
+    background-image: url("img/anomalia.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1em 1em;
+    line-height: 1.5;
+}
+
+.vineta_personalizada .li_aberracion{
+    padding-left: 25px;
+    background-image: url("img/aberracion.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1em 1em;
+    line-height: 1.5;
+}
+
+/* VINETAS KITS DE NAVES */
+
+.vineta_personalizada .li_wep{
+    padding-left: 25px;
+    background-image: url("img/vinetas/wep.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1em 1em;
+    line-height: 1.5;
+}
+
+.vineta_personalizada .li_def{
+    padding-left: 25px;
+    background-image: url("img/vinetas/def.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1em 1em;
+    line-height: 1.5;
+}
+
+.vineta_personalizada .li_eng{
+    padding-left: 25px;
+    background-image: url("img/vinetas/eng.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1em 1em;
+    line-height: 1.5;
+}
+
+.vineta_personalizada .li_rct{
+    padding-left: 25px;
+    background-image: url("img/vinetas/rct.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1em 1em;
+    line-height: 1.5;
+}
+
+.vineta_personalizada .li_subsys{
+    padding-left: 25px;
+    background-image: url("img/vinetas/subsys.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1em 1em;
+    line-height: 1.5;
+}
+
+.vineta_personalizada .li_trrt_m{
+    padding-left: 25px;
+    background-image: url("img/vinetas/trrt_m.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1em 1em;
+    line-height: 1.5;
+}
+
+.vineta_personalizada .li_trrt_s{
+    padding-left: 25px;
+    background-image: url("img/vinetas/trrt_s.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1em 1em;
+    line-height: 1.5;
+}
+
+.vineta_personalizada .li_trrt_p{
+    padding-left: 25px;
+    background-image: url("img/vinetas/trrt_p.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1em 1em;
+    line-height: 1.5;
+}
+
+
+/* FOOTERS */
+
+footer {
+
+    background-color: #192135;
+    color: white;
+    padding: 0.5rem 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+footer section{
+    float: right;
+}
+
+footer p{
+    margin: 0;
+}
+
